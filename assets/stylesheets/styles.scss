@@ -1,3 +1,5 @@
+@import "mobile";
+
 $fontcolor: #50555A;
 $lato: "Lato", sans-serif;
 $oswald: "Oswald", sans-serif;
@@ -27,17 +29,31 @@ header {
   margin-bottom:7%;
   margin-top:7%;
 
-  img[src="assets/images/logo.png"] {
+  .logo img {
     width:25%;
     height:25%;
     position:relative;
   }
-  img[src="assets/images/filledheart.png"] {
-    width:3.5%;
-    height:3.5%;
+  .logo2 img {
+    width:15%;
+    height:15%;
     position:relative;
+  }
+  .counter img{
+    width:2.5%;
+    height:auto;
     float:right;
-    margin-left:1%;
+    margin-top: -22.5%;
+    margin-right: 3%;
+    position:relative;
+  }
+  .counter2 img{
+    width:2.5%;
+    height:auto;
+    float:right;
+    margin-top: -12%;
+    margin-right: 3%;
+    position:relative;
   }
 }
 
@@ -47,6 +63,7 @@ h1 {
   font-size:1.35vw;
   position:relative;
   float:right;
+  margin-top:-22.75%;
 }
 
 h2 {
@@ -56,11 +73,25 @@ h2 {
   text-align: right;
 }
 
+h5 {
+  color: $fontcolor;
+  font-family:$lato;
+  font-size:1.35vw;
+  position:relative;
+  float:right;
+  margin-top:-12%;
+}
+
+.faves {
+  position: relative;
+  padding-top:15%;
+}
+
+
 .slogan {
   width:60%;
   float:right;
-  margin-top:10%;
-  margin-right:-5%;
+  margin-top:-15%;
 }
 
 .sort {
@@ -86,7 +117,7 @@ h2 {
     color:black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:2vw;
+    font-size:1.65vw;
     }
 
     li {
@@ -108,13 +139,17 @@ h2 {
   float:left;
   margin-bottom:7%;
   border: $border;
+  background-color: white;
   }
+    .add-designs {
+      margin-left:15%;
+    }
 
     img {
     width:100%;
     height:100%;
     position:absolute;
-    background-size:cover;
+    object-fit:cover;
     }
 
     /*column 1*/
@@ -132,3 +167,73 @@ h2 {
     float: right;
     margin-right:0%;
     }
+
+    .productoverlay {
+      background-color: white;
+      opacity:.6;
+      position:absolute;
+      padding:1%;
+      margin-top:82%;
+      width:100%;
+      height:25%;
+    }
+
+    .like img{
+      position:relative;
+      width:15%;
+      float:right;
+      margin-right:-11%;
+      margin-top:87%;
+      opacity:.8;
+    }
+
+    .expand img{
+      position:relative;
+      width:13%;
+      float:right;
+      padding-top:3%;
+      padding-right:3%;
+    }
+
+    h3 {
+      font-family: $oswald;
+      line-height: .5%;
+      font-size:1.2vw;
+      text-transform: uppercase;
+      margin-left:1%;
+
+    }
+
+    h4 {
+      font-family: $oswald;
+      line-height: .5%;
+      font-size: 1vw;
+      text-transform: uppercase;
+      margin-left:1%;
+    }
+
+    p {
+      margin-top:9%;
+    }
+
+a:link {
+  color:$fontcolor;
+  text-decoration: none;
+}
+
+a:visited {
+  color:$fontcolor;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#50555A;
+  text-decoration: none;
+}
+
+a:active {
+  color:#50555A;
+  text-decoration: none;
+}
+
+
